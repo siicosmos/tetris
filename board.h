@@ -6,6 +6,7 @@ class board
 	public:
 		int numPoints;
 		board();
+		~board();
 		void reset();
 		bool collision(bool tileBlocks[4][4], int steps, int boundCheck);
 		bool reachedTop(bool tileBlocks[4][4], int steps);

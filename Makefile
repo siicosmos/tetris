@@ -13,8 +13,8 @@
 # Including of non standard library files:
 #   INCLUDEDIR is where the header files can be found
 #   LIBDIR is where the library object files can be found
-INCLUDEDIR=/usr/include/
-LIBDIR=/usr/lib
+INCLUDEDIR=/usr/local/include/
+LIBDIR=/usr/local/lib
 
 # If you have more source files add them here 
 SOURCE= tetris.cpp include/InitShader.cpp tiles.cpp board.cpp
@@ -25,7 +25,7 @@ CC= g++
 # The flags that will be used to compile the object file.
 # If you want to debug your program,
 # you can add '-g' on the following line
-CFLAGS= -O3 -g -Wall -pedantic -DGL_GLEXT_PROTOTYPES
+CFLAGS= -O3 -g -Wall -pedantic -DGL_GLEXT_PROTOTYPES -Wno-deprecated
 
 # The name of the final executable 
 EXECUTABLE=tetris
@@ -34,7 +34,11 @@ EXECUTABLE=tetris
 # to your program here 
 
 # Linux (default)
-LDFLAGS = -lGL -lglut -lGLEW -lXext -lX11 -lm
+#LDFLAGS = -lGL -lglut -lGLEW -lXext -lX11 -lm
+# osx
+GCC_OPTIONS=-Wall -pedantic -I ../include
+GL_OPTIONS=-framework OpenGL -framework GLUT 
+LDFLAGS=$(GCC_OPTIONS) $(GL_OPTIONS)
 
 # If you have other library files in a different directory add them here 
 INCLUDEFLAG= -I. -I$(INCLUDEDIR) -Iinclude/
@@ -45,10 +49,10 @@ OBJECT= $(SOURCE:.cpp=.o)
 
 # Don't touch any of these either if you don't know what you're doing 
 all: $(OBJECT) depend
-	$(CC) $(CFLAGS) $(INCLUDEFLAG) $(LIBFLAG) $(OBJECT) -o $(EXECUTABLE) $(LDFLAGS) 
+	$(CC) $(CFLAGS) $(INCLUDEFLAG) $(LIBFLAG) $(OBJECT) -o $(EXECUTABLE) $(LDFLAGS)
 
 depend:
-	$(CC) -MM -MT $(SOURCE) > depend
+	$(CC) -M $(SOURCE) > depend
 
 $(OBJECT):
 	$(CC) $(CFLAGS) $(INCLUDEFLAG) -c -o $@ $(@:.o=.cpp)

@@ -1,16 +1,18 @@
 #include "include/Angel.h"
-#include "constants.h"
-#include "tiles.h"
 #include <sys/time.h>
 #include <unistd.h>
+#include "constants.h"
+#include "tiles.h"
+
+using namespace std;
 
 bool gameOver = false;
-vec2 points[TotalPoints];
-vec4 colors[TotalPoints];
+vec2* points = new vec2[TotalPoints];
+vec4* colors = new vec4[TotalPoints];
 tiles tiles_g;
 board board_g;
 
-std::uint32_t Base = 0;
+uint32_t Base = 0;
 
 void printtext(int x, int y, string String){
     glColor3f(255, 100, 100);
@@ -199,5 +201,8 @@ int main(int argc, char **argv)
 
 	glutMainLoop();
 
+
+    delete [] points;
+    delete [] colors;
 	return 0;
 }

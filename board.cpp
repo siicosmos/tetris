@@ -7,6 +7,11 @@ board::board()
 	reset();
 }
 
+board::~board()
+{
+    
+}
+
 void board::reset()
 {
 	for(int i = 0; i < 20; i++)
