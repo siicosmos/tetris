@@ -15,6 +15,11 @@ tiles::tiles()
     color_id = randomNumGen();
 }
 
+tiles::~tiles()
+{
+    
+}
+
 int tiles::randomNumGen()
 {
     srand((unsigned)time(0)); // true random number / random color and shape

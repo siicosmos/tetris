@@ -30,6 +30,7 @@ class tiles
         string TileShapeString;
     
 		tiles();
+		~tiles();
         int randomNumGen();
 		void left();
 		void right();

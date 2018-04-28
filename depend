@@ -168,17 +168,30 @@ tetris.o: tetris.cpp include/Angel.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLRenderers.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h \
   /usr/include/AvailabilityMacros.h \
+<<<<<<< HEAD
   /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+=======
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /System/Library/Frameworks/GLUT.framework/Headers/glut.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+<<<<<<< HEAD
   include/vec.h constants.h tiles.h board.h /usr/include/sys/time.h \
+=======
+  /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+  include/vec.h /usr/include/sys/time.h \
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /usr/include/sys/_types/_timeval64.h /usr/include/sys/_select.h \
   /usr/include/unistd.h /usr/include/sys/unistd.h \
   /usr/include/sys/_types/_posix_vdisable.h \
   /usr/include/sys/_types/_seek_set.h /usr/include/sys/select.h \
+<<<<<<< HEAD
   /usr/include/sys/_types/_uuid_t.h /usr/include/gethostuuid.h
+=======
+  /usr/include/sys/_types/_uuid_t.h /usr/include/gethostuuid.h \
+  constants.h tiles.h board.h
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
 InitShader.o: include/InitShader.cpp include/Angel.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
@@ -349,11 +362,18 @@ InitShader.o: include/InitShader.cpp include/Angel.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLRenderers.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h \
   /usr/include/AvailabilityMacros.h \
+<<<<<<< HEAD
   /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+=======
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /System/Library/Frameworks/GLUT.framework/Headers/glut.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+<<<<<<< HEAD
+=======
+  /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   include/vec.h
 tiles.o: tiles.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream \
@@ -526,13 +546,22 @@ tiles.o: tiles.cpp \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLRenderers.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h \
   /usr/include/AvailabilityMacros.h \
+<<<<<<< HEAD
   /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+=======
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /System/Library/Frameworks/GLUT.framework/Headers/glut.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+<<<<<<< HEAD
   include/vec.h board.h constants.h
 board.o: board.cpp board.h include/Angel.h \
+=======
+  /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+  include/vec.h board.h constants.h
+board.o: board.cpp board.h constants.h include/Angel.h \
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h \
@@ -702,9 +731,17 @@ board.o: board.cpp board.h include/Angel.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLRenderers.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h \
   /usr/include/AvailabilityMacros.h \
+<<<<<<< HEAD
   /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+=======
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
   /System/Library/Frameworks/GLUT.framework/Headers/glut.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
   /System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+<<<<<<< HEAD
   include/vec.h constants.h
+=======
+  /System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+  include/vec.h
+>>>>>>> 3ffae32195fbf6f55fe98b4365704ef15f6fcfd4
