@@ -1,6 +1,6 @@
 #include "board.h"
-#include "constants.h"
 #include "include/Angel.h"
+#include "constants.h"
 
 board::board()
 {

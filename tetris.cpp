@@ -12,17 +12,6 @@ board board_g;
 
 std::uint32_t Base = 0;
 
-void printtext(int x, int y, string String){
-    glColor3f(255, 100, 100);
-    glRasterPos2f(x, y);
-    int len;
-    len = (int)String.length();
-    for(int i = 0; i < len; i++)
-    {
-        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, String[i]);
-    }
-}
-
 void init(void)
 {
 	// points
@@ -109,7 +98,6 @@ void display(void)
     }
     else
     {
-        printtext(150, 400, GG_str);
         glutSwapBuffers();
         glFlush();
     }
