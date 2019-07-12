@@ -1,6 +1,6 @@
 # a tetris game
 
-A classic tetris game coded in modern C++
+A classic tetris game coded in C++ mixed with C
 
 ## makefile
 
